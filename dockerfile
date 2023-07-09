@@ -1,4 +1,5 @@
 FROM centos:latest
+RUN yum -y install appstream-data
 RUN yum install -y httpd \
 zip \
 unzip
