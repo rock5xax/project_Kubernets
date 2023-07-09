@@ -9,7 +9,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page293/ve
 WORKDIR /var/www/html/
 RUN cd /var/www/html/
 RUN unzip vertex.zip
-RUN cp -rvf vertex.zip
 RUN rm -rf vertex vertex.zip
 CMD [ "/usr/sbin/httpd", "-D", "FOREGROUND" ]
 EXPOSE 80 22
