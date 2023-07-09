@@ -8,4 +8,4 @@ RUN unzip vertex.zip
 RUN cp -rvf vertex.zip
 RUN rm -rf vertex vertex.zip
 CMD [ "/usr/sbin/httpd", "-D", "FOREGROUND" ]
-EXPOSE 80
+EXPOSE 80 22
